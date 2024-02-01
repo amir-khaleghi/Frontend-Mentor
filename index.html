@@ -16,7 +16,7 @@
       href="./assets/images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | Blog preview card</title>
+    <title>Frontend Mentor | Recipe page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
@@ -28,39 +28,131 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
+    <style>
+      .custom-ol li::before {
+        content: counter(list-item) '. ';
+        color: rgb(163, 29, 29);
+        font-weight: bold;
+        padding-right: 1rem;
+      }
+    </style>
   </head>
-  <body class="bg-yellow-300 h-screen flex items-center justify-center">
-    <div class="flex flex-col relative">
-      <div
-        class="w-[300px] relative rounded-xl bg-white flex flex-col items-center p-4 gap-6"
-      >
-        <img
-          class="rounded-xl"
-          src="./assets/images/illustration-article.svg"
-          alt=""
-        />
-        <div class="flex flex-col items-start justify-between gap-4">
-          <p class="bg-yellow-400 rounded-md font-bold text-xs px-3 py-1">
-            Learning
-          </p>
-          <p class="text-xs">Published 21 Dec 2023</p>
-          <h3 class="text-lg font-bold">HTML & CSS foundations</h3>
-          <p class="text-black/60 text-sm">
-            These languages are the backbone of every website, defining
-            structure, content, and presentation.
-          </p>
-          <div class="flex gap-2 items-center">
-            <img
-              class="w-8"
-              src="./assets/images/image-avatar.webp"
-              alt=""
-            />
-            <p class="font-bold">Greg Hooper</p>
-          </div>
-        </div>
-        <div
-          class="w-[300px] h-[433px] rounded-xl bg-black absolute -z-10 flex flex-col items-center p-4 gap-6 -right-2"
-        />
+  <body>
+    <img
+      src="/assets/images/image-omelette.jpeg"
+      alt=""
+    />
+    <div class="flex flex-col gap-6 p-8">
+      <h1 class="font-serif text-3xl font-bold">Simple Omelette Recipe</h1>
+      <p class="font-semibold text-md text-black/80">
+        An easy and quick dish, perfect for any meal. This classic omelette
+        combines beaten eggs cooked to perfection, optionally filled with your
+        choice of cheese, vegetables, or meats.
+      </p>
+      <div class="p-4 rounded-lg bg-pink-50">
+        <p class="pb-4 text-xl font-bold text-pink-800">Preparation time</p>
+        <ul
+          style="list-style-type: disc"
+          class="flex flex-col gap-4 p-8"
+        >
+          <li>
+            <span class="font-bold">Total</span>: Approximately 10 minutes
+          </li>
+          <li><span class="font-bold">Preparation</span>: 5 minutes</li>
+          <li><span class="font-bold">Cooking</span>: 5 minutes</li>
+        </ul>
+      </div>
+
+      <div class="border-b">
+        <h1 class="font-serif text-3xl font-bold text-amber-700">
+          Ingredients
+        </h1>
+        <ul
+          style="list-style-type: disc"
+          class="flex flex-col gap-4 p-8"
+        >
+          <li>2-3 large eggs</li>
+          <li>Salt, to taste</li>
+          <li>Pepper, to taste</li>
+          <li>1 tablespoon of butter or oil</li>
+          <li>
+            Optional fillings: cheese, diced vegetables, cooked meats, herbs
+          </li>
+        </ul>
+      </div>
+
+      <div class="pb-8 border-b">
+        <h1 class="pb-4 font-serif text-3xl font-bold text-amber-700">
+          Instructions
+        </h1>
+        <ol class="flex flex-col gap-4 px-8 custom-ol">
+          <li>
+            <span class="font-bold">Beat the eggs: </span>In a bowl, beat the
+            eggs with a pinch of salt and pepper until they are well mixed. You
+            can add a tablespoon of water or milk for a fluffier texture.
+          </li>
+          <li>
+            <span class="font-bold">Beat the eggs: </span>In a bowl, beat the
+            eggs with a pinch of salt and pepper until they are well mixed. You
+            can add a tablespoon of water or milk for a fluffier texture.
+          </li>
+          <li>
+            <span class="font-bold">Beat the eggs: </span>In a bowl, beat the
+            eggs with a pinch of salt and pepper until they are well mixed. You
+            can add a tablespoon of water or milk for a fluffier texture.
+          </li>
+          <li>
+            <span class="font-bold">Beat the eggs: </span>In a bowl, beat the
+            eggs with a pinch of salt and pepper until they are well mixed. You
+            can add a tablespoon of water or milk for a fluffier texture.
+          </li>
+          <li>
+            <span class="font-bold">Beat the eggs: </span>In a bowl, beat the
+            eggs with a pinch of salt and pepper until they are well mixed. You
+            can add a tablespoon of water or milk for a fluffier texture.
+          </li>
+          <li>
+            <span class="font-bold">Beat the eggs: </span>In a bowl, beat the
+            eggs with a pinch of salt and pepper until they are well mixed. You
+            can add a tablespoon of water or milk for a fluffier texture.
+          </li>
+        </ol>
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <h1 class="font-serif text-3xl font-bold text-amber-700">Nutrition</h1>
+        The table below shows nutritional values per serving without the
+        additional fillings. Protein 20g Fat 22g
+        <table>
+          <tbody>
+            <tr>
+              <td class="px-4 py-2 border-b">Calories</td>
+              <td class="px-4 py-2 font-bold border-b text-amber-800">
+                227kcal
+              </td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border-b">Fat</td>
+              <td class="px-4 py-2 font-bold border-b text-amber-800">0g</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border-b">Carbs</td>
+              <td class="px-4 py-2 font-bold border-b text-amber-800">0g</td>
+            </tr>
+            <tr>
+              <td class="px-4 py-2 border-b">Protein</td>
+              <td class="px-4 py-2 font-bold border-b text-amber-800">22gr</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Amir dev</a>.
       </div>
     </div>
   </body>
